@@ -1,14 +1,11 @@
-import viteLogo from '/vite.svg'
 import './App.css'
-
+import Probes from './Probes.jsx'
 function App() {
-  const [count, setCount] = useState(0)
-
+    const durgesh = "my name is khan and my profession is to develop software "
   return (
     <>
-
+      <Probes />
     </>
-  )
+  );
 }
-
 export default App
