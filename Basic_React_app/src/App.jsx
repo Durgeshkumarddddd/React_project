@@ -1,9 +1,10 @@
 import './App.css'
 import Probes from './Probes.jsx'
+import MsgBox from './MsgBox.jsx';
 function App() {
-    const durgesh = "my name is khan and my profession is to develop software "
-  return (
+return (
     <>
+      <MsgBox name="Durgesh" textcolor="red" />
       <Probes />
     </>
   );
