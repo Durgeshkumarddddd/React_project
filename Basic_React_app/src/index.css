@@ -1,8 +1,34 @@
-.product{
-border-radius: 10%;
-border: solid 1px red;
+.productTab{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  position: relative;
+  align-items: center;
 }
+.product{
+  border-radius: 14px;
+  border: solid 1px red;
+  width: 20rem;
+  height: 15rem;
+  overflow: hidden;
+  
+}
+.price{
+  background-color: yellowgreen;
+  width: 20rem;
+  color: black;
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  bottom: 0;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
 
+}
+.oldP{
+  margin-inline : 70px;
+  text-decoration: line-through;
+}
 
 
 
