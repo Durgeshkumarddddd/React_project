@@ -3,11 +3,15 @@ import './App.css'
 // import MsgBox from './MsgBox.jsx';
 import ProductTab from './ProductTab';
 import Button from './Button';
+import Form from './Form';
+import Count from './Count';
 function App() {
 return(
     <>
        < ProductTab /> 
-       <Button />  // This is a new button component added.
+       <Button />
+       <Form />
+       <Count />   
     </>
   );
  {/* <MsgBox name="Durgesh" textcolor="red" desColor="pink" description="Some student is very intelli"/>
