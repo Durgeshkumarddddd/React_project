@@ -1,9 +1,9 @@
+import {useState} from 'react';
 
-
-export default function Count(){
-    let count = 0;
+export default function Hooks(){
+  const [count, setCount] = useState(0);
 function counting(){
- count = count + 1;
+ setCount(count+1);  
 console.log(count);
 }
     return (
