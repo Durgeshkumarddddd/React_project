@@ -10,6 +10,7 @@ import Ludo from './Ludo';
 import TudoList from './TudoList';
 import Lottery from './Lottery';
 import {sum } from './ticket.js';
+import MultipleInputForm from './MultipleInputForm.jsx';
 function App() {
   function winCondition(ticket){
     return sum(ticket) === 15 ;
@@ -24,6 +25,7 @@ return(
         <Ludo />
         <TudoList /> */}
         <Lottery n={3} winningSum={winCondition} />
+        <MultipleInputForm></MultipleInputForm>
 
     </>
   );
