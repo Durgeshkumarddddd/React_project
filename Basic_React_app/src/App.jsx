@@ -11,6 +11,8 @@ import TudoList from './TudoList';
 import Lottery from './Lottery';
 import {sum } from './ticket.js';
 import MultipleInputForm from './MultipleInputForm.jsx';
+import CreateUseEffect from './CreateUseEffect.jsx';
+import Jokes from './jokes.jsx'
 function App() {
   function winCondition(ticket){
     return sum(ticket) === 15 ;
@@ -26,7 +28,8 @@ return(
         <TudoList /> */}
         <Lottery n={3} winningSum={winCondition} />
         <MultipleInputForm></MultipleInputForm>
-
+        <CreateUseEffect></CreateUseEffect>  // Added useEffect component
+        <Jokes />
     </>
   );
  {/* <MsgBox name="Durgesh" textcolor="red" desColor="pink" description="Some student is very intelli"/>
