@@ -1,7 +1,7 @@
 import {useState} from 'react';
 import {randomNo} from './ticket.js' ;
 import {sum } from './ticket.js';
-import Ticket from './Tickets.jsx';
+import Ticket from '../Tickets.jsx';
 export default function Lottery({n, winningSum}){
   
   let [ticket, setTicket] = useState([0,0,0 ])

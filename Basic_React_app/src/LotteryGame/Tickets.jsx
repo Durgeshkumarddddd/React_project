@@ -1,4 +1,4 @@
-import TicketNum from "./TicketNum"
+import TicketNum from "./LotteryGame/TicketNum"
 export default function Ticket({ticket}){
  return(
     <div>

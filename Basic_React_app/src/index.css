@@ -29,6 +29,14 @@
   margin-inline : 70px;
   text-decoration: line-through;
 }
+.nav_link_routing{
+  display: flex ; 
+  gap: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 30px;
+  cursor: pointer;
+}
 
 
 
