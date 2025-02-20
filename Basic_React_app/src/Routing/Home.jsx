@@ -1,27 +1,26 @@
+import {Routes, Route,Link,NavLink} from 'react-router-dom'
+import Home from './context/Home';
+import User from './context/User';
+import Detail from './context/Details';
 export default function Home(){
-    let style = {
-        backgroundColor: "lightgray",
-        padding: "10px",
-        border: "none",
-        borderRadius: "5px",
-        color: "white",
-        fontWeight : "bold",
-        width:"200px",
-        marginLeft: "40%",
-        marginTop: "5%",
-        textAlign: "center",
-        justifyContent: "center"
-    }
-    return(
-        <div style={style}>
-      <p> 
-
-         This is the home page where you can find 
-        all the pros and cons of the Websites and it is the main page of the file.
-
-      </p>
-
-        </div>
-  
+    return (
+      <div>
+         <nav className='nav_link_routing'>
+      <NavLink style={(e)=> { return{
+         color : e.isActive ? 'red' : "",
+         fontWeight : e.isActive ? "bold" :""
+      }}}
+       to={'/'} > Home </NavLink >
+      <NavLink  style={(e)=> {return{color : e.isActive ? "red" : "",
+                fontWeight : e.isActive ? "bold" :""
+      }}} to={'/user'} > User </NavLink>
+      <NavLink className={(e)=> {return{color : e.isActive ? "red" : ""}}} to={'/detail'}> Detail  </NavLink>  {/* comment :   // In case of Css tailwind it auto give color but in case of css  you hava to give color  */}
+     </nav>
+      <Routes>
+          <Route path="/" element={<Home />} /> 
+          <Route path="/user" element={<User />} />     
+          <Route path="/detail" element={<Detail />} />
+      </Routes>
+      </div>
     );
 }
